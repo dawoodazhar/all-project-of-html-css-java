@@ -5,16 +5,47 @@
 
 <body>
 <script>
-var a=2;
-var b=2;
-a+=2;
-a-= 3;
-a++;
-var c= a++ + ++a + b++ - --a + ++b + --b - --b;
-alert(a);
-alert(b);
-alert(c);
+var a;
+for(var b=0;b<11;b++)
+{
+for(a=0;a<4;a++)
+{
+var x=prompt("vote for your favourite leader.....press 1 for nawaz sharif, 2 for imran khan and 3 for zardari");
+if(x==1)
+{
+    
+alert("you wote for nawaz sharif"); 
+var c="total vote for nawaz sharif is ";
+var b=0;
+b++;
+alert(c + b);
 
+}
+else if(x==2)
+{
+
+alert("you wote for imran khan");
+var c="total vote for imran khan is ";
+
+var b=0;
+b++;
+alert(c + b);
+
+}
+else if(x==3)
+{
+
+alert("you wote for zardari");
+var c="total vote for zardari is ";
+var b=0;
+b++;
+alert(c + b);
+}
+else
+
+alert("you are out of range");
+
+}
 </script>
 
 </body>
