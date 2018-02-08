@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+    .todolist{
+        text-align: center;   
+    }
+.h{ 
+    color: white;
+    background-color:black;
+    margin-top: 70px;
+    text-align: center;
+}
+form{
+    text-align: center;
+} 
+.dlt{
+    
+    margin-left:4px;
+margin-right:4px;
+}
+.add{
+margin-left:9px;
+margin-right:9px;
+text-align: center
+}
+.todoform{
+    text-align: center;
+}
+</style>
+<script>
+        function todolist(){
+      var item = document.getElementById("todoinput").value
+      var text=document.createTextNode(item);
+      var newitem = document.createElement("li");
+      newitem.appendChild(text);
+      document.getElementById("todolist").appendChild(newitem);
+       }
+     function  removelist(){
+var list=document.getElementById("todolist");
+list.removeChild(list.childNodes[0]);
+  
+     }
+      </script>
+
+</head>
+<body>
+<h1 class="h">TODO LIST USING JAVA SCRIPT</h1>
+<form id="todoform">
+<input id="todoinput">
+<button type="button" onclick="todolist()"><span class="add"> ADD </span><button type="button" onclick="removelist()" class="dlt"> DELETE </button>
+</button>
+</form>
+<ul id="todolist">
+<ul>
+</div>
+</body>
+</html>
